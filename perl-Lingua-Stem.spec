@@ -1,6 +1,6 @@
 %define module  Lingua-Stem
 %define name    perl-%{module}
-%define version 0.82
+%define version 0.83
 %define release %mkrel 1
 
 Name:           %{name}
@@ -10,7 +10,7 @@ Summary:        Stemming of words
 License:        GPL or Artistic
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/Lingua/%{module}-%{version}.tar.bz2
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif

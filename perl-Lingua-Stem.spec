@@ -22,6 +22,7 @@ BuildRequires:  perl(Lingua::Stem::Snowball::No)
 BuildRequires:  perl(Lingua::Stem::Snowball::Se)
 BuildRequires:  perl(Text::German)
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 This routine applies stemming algorithms to its parameters, returning the

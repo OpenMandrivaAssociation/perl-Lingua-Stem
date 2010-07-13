@@ -1,5 +1,5 @@
 %define upstream_name    Lingua-Stem
-%define upstream_version 0.83
+%define upstream_version 0.84
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:        Stemming of words
 License:        GPL+ or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{upstream_name}
-Source0:        http://www.cpan.org/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:        http://www.cpan.org/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
@@ -36,7 +36,7 @@ stemmed words as appropriate to the selected locale.
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot} 
